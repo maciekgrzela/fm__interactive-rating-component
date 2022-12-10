@@ -17,9 +17,11 @@ This is a solution to the [Interactive Rating Component challenge on Frontend Me
 
 ### Screenshot
 
-![Web](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/screen_web.png)
-![Mobile](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/screen_mobile.png)
-
+![Web](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/images/screen_web_start.png)
+![Web Hover States](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/images/screen_web_hover_states.png)
+![Web Selected](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/images/screen_web_selected.png)
+![Mobile Start](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/images/screen_mobile_start.png)
+![Mobile Selected](https://raw.githubusercontent.com/maciekgrzela/fm__interactive-rating-component/main/src/assets/images/screen_mobile_selected.png)
 
 ### Links
 
