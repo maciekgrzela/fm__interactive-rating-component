@@ -1,0 +1,138 @@
+@import "../utils/variables";
+
+@mixin text-header {
+  font-size: $headerFontSize;
+  color: $white;
+  font-weight: 600;
+}
+
+@mixin text-desc {
+  font-weight: 300;
+  color: $lightGray;
+  line-height: 1.5;
+  font-size: $textFontSize;
+}
+
+@mixin flex-column-gap($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin circled-div {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: lighten($darkBlue, 3%);
+}
+
+.RatingComponent {
+  background: $componentPrimary radial-gradient(ellipse at top, rgba($mediumGray, 0.15), transparent);
+  border-radius: 30px;
+}
+
+.SelectionRatingComponent {
+  @include flex-column-gap(25px);
+  padding: 32px;
+  width: 400px;
+
+  &__header {
+    @include text-header;
+    margin-bottom: -10px;
+  }
+
+  &__text {
+    @include text-desc;
+  }
+
+  &__feedback {
+    @include flex-column-gap(25px);
+  }
+
+  &__star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include circled-div;
+    margin-bottom: 10px;
+  }
+}
+
+.SelectionRatingComponentFeedback {
+  &__ratings {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include circled-div;
+    color: $mediumGray;
+    font-size: $numberFontSize;
+    cursor: pointer;
+
+    &--selected {
+      background-color: $mediumGray;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  &__submit {
+    cursor: pointer;
+    background-color: $primary;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $buttonTextFontSize;
+    letter-spacing: 1.5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}
+
+.SelectedRatingComponent {
+  @include flex-column-gap(35px);
+  align-items: center;
+
+  width: 420px;
+  padding: 40px;
+
+  &__selection-text {
+    display: flex;
+    justify-content: center;
+
+    color: $primary;
+    background-color: lighten($darkBlue, 3%);
+    padding: 6px 0;
+    width: 200px;
+    border-radius: 15px;
+  }
+
+  &__caption {
+    @include flex-column-gap(10px);
+    align-items: center;
+  }
+
+  &__header {
+    @include text-header;
+  }
+
+  &__text {
+    @include text-desc;
+    text-align: center;
+  }
+}
