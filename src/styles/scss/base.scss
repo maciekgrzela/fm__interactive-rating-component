@@ -1,0 +1,18 @@
+@import "utils/variables";
+
+@import "components/App";
+@import 'components/RatingComponent';
+
+* {
+  box-sizing: border-box;
+  font-family: $fontDefault;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: $veryDarkBlue;
+  font-family: $fontDefault;
+}

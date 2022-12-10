@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap");
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RatingComponent {
+  background: hsl(215deg, 26%, 13%) radial-gradient(ellipse at top, rgba(124, 135, 152, 0.15), transparent);
+  border-radius: 30px;
+}
+
+.SelectionRatingComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 32px;
+  width: 400px;
+}
+.SelectionRatingComponent__header {
+  font-size: 27px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+.SelectionRatingComponent__text {
+  font-weight: 300;
+  color: hsl(217deg, 12%, 63%);
+  line-height: 1.5;
+  font-size: 15px;
+}
+.SelectionRatingComponent__feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.SelectionRatingComponent__star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #2b3540;
+  margin-bottom: 10px;
+}
+
+.SelectionRatingComponentFeedback__ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.SelectionRatingComponentFeedback__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #2b3540;
+  color: hsl(216deg, 12%, 54%);
+  font-size: 16px;
+  cursor: pointer;
+}
+.SelectionRatingComponentFeedback__rating--selected {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+.SelectionRatingComponentFeedback__rating:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.SelectionRatingComponentFeedback__submit {
+  cursor: pointer;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 30px;
+}
+.SelectionRatingComponentFeedback__submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.SelectedRatingComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  width: 420px;
+  padding: 40px;
+}
+.SelectedRatingComponent__selection-text {
+  display: flex;
+  justify-content: center;
+  color: hsl(25deg, 97%, 53%);
+  background-color: #2b3540;
+  padding: 6px 0;
+  width: 200px;
+  border-radius: 15px;
+}
+.SelectedRatingComponent__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.SelectedRatingComponent__header {
+  font-size: 27px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+}
+.SelectedRatingComponent__text {
+  font-weight: 300;
+  color: hsl(217deg, 12%, 63%);
+  line-height: 1.5;
+  font-size: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+/*# sourceMappingURL=base.css.map */
